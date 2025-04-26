@@ -123,14 +123,17 @@
 
 
 @layer utilities {
-  .gradient {
+ .gradient {
     @apply bg-gradient-to-br from-blue-600 to-purple-600;
   }
 
-  .gradient-title {
-    @apply bg-gradient-to-br from-blue-600 to-purple-600 font-extrabold tracking-tighter pr-2 pb-2 text-transparent bg-clip-text;
+  .gradient-logo {
+    @apply bg-gradient-to-br from-red-600 to-purple-600 font-extrabold tracking-tighter pr-2 pb-2 text-transparent bg-clip-text;
   }
-}
+
+  .gradient-title {
+    @apply bg-gradient-to-br from-blue-300 to-purple-500 font-extrabold tracking-tighter pr-2 pb-2 text-transparent bg-clip-text;
+  }
 
 .hero-image-wrapper {
   perspective: 1000px;
@@ -144,4 +147,5 @@
 
 .hero-image.scrolled{
   transform: rotateX(0deg) scale(1) translateY(40px);
+}
 }
